@@ -43,7 +43,7 @@ module.exports = {
 
   production: {
     client: "pg",
-    connection: {
+    connection: process.env.DATABASE_URL || {
       host: "ec2-34-239-33-57.compute-1.amazonaws.com",
       database: "dfnhgkspmh1tn1",
       user: "jzxeswgqcfbejm",
@@ -52,7 +52,7 @@ module.exports = {
     },
     migrations: {
       directory: "./data/migrations",
-      tableName: "potluck-planner",
+      tableName: "users",
     },
     seeds: {
       directory: "./data/seeds",
