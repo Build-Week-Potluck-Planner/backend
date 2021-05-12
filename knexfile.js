@@ -52,7 +52,7 @@ module.exports = {
     },
     migrations: {
       directory: "./data/migrations",
-      tableName: "users",
+      tableName: "potluck-planner",
     },
     seeds: {
       directory: "./data/seeds",
